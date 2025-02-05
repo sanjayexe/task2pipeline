@@ -1,0 +1,442 @@
+body {
+    background-color: #252525;
+    /* bg color-#252525 btn color- #ff3131*/
+    padding: 0%;
+    margin: 0%;
+    font-family: sans-serif;
+    color: white;
+}
+
+nav {
+    padding-top: 25px;
+    margin-right: 150px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 40px;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul a:hover {
+    color: #ff3131;
+    transition: .2s ease-in;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+button {
+    background-color: #ff3131;
+    border-radius: 5px;
+    border-color: transparent;
+    border-style: solid;
+    width:200px;
+    transition: .2s ease-in;
+    cursor: pointer;
+    justify-content: center;
+    height: 46px;
+    font-size: 16px;
+}
+
+nav button,
+.btn button {
+    /* buttons intro div */
+    height: 46px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: red;
+}
+.contact_us{
+    margin-top: 7%;
+    margin-bottom: 4%;
+    width: 540px;
+}
+.contact_us p{
+    display:flex;
+    flex-direction: column;
+    line-height: 1.5;
+}
+.contact_us span{
+    padding-bottom: 2%;
+    color: #ff3131;
+    font-weight: bolder;
+    font-size:20px;
+}
+.contact_us .head{
+    font-size: 40px;
+    font-weight: bolder;
+}
+small{
+    color: white;
+}
+.design {
+    margin-top: -7%;
+    border-style: none;
+    background-color: #ff3131;
+    width: 65px;
+    height: 5px;
+}
+
+.touch {
+    padding: 20px 150px 20px 150px;
+    line-height: 1.5;
+    background-color: white;
+    color: black;
+    display: flex;
+}
+.touch .content{
+    width: 400px;
+}
+.touch h1{
+    font-weight:bolder;
+}
+.touch ul{
+    padding-left: 0%;
+}
+form{
+    background-color: #252525;
+    width: 460px;
+    height: 450px;
+    padding: 20px 20px;
+    margin-left:30%;
+}
+form p{
+    color: white;
+    text-align: center;
+    font-size:26px;
+    font-weight: bolder;
+}
+form input{
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 430px;
+    height: 30px;
+    font-size: large;
+}
+.details .heading {
+    width: 300px;
+    margin-left: 5px;
+    display: flex;
+}
+.details p {
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.box {
+    padding: 0px 40px 40px 45px;
+    margin: 20px 150px 30px 300px;
+    width: 900px;
+    height: 170px;
+    border-style: none;
+    background-color: #252525;
+    border-radius: 5px;
+    color: gray;
+    box-shadow: -1px 2px 19px -7px rgba(157, 147, 147, 0.49);
+    -webkit-box-shadow: -1px 2px 19px -7px rgba(157, 147, 147, 0.49);
+    -moz-box-shadow: -1px 2px 19px -7px rgba(157, 147, 147, 0.49);
+    display: flex;
+}
+
+.box .content {
+    width: 600px;
+}
+
+.box .content span {
+    line-height: 1.5;
+}
+
+.box .heading {
+    color: #ff3131;
+    font-size: 29px;
+    font-weight: bolder;
+}
+
+.box button {
+    width: 150px;
+    height: 46px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 150px;
+    margin-top: 80px;
+}
+
+.box button:hover {
+    background-color: red;
+}
+
+.contact {
+    justify-content: center;
+    line-height: 1.5;
+    color: grey;
+    font-size: 15px;
+    width: fit-content;
+    padding: 20px 150px 20px 150px;
+}
+
+.contact .mail {
+    display: flex;
+    align-items: center;
+}
+
+.mail p {
+    color: #ff3131;
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.contact .mail input {
+    width: 400px;
+    height: 30px;
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin-left: 200px;
+}
+
+.contact .mail button {
+    margin-left: 20px;
+    height: 50px;
+    width: 150px;
+}
+
+.contact .mail button:hover {
+    background-color: red;
+}
+
+.contact .con {
+    display: flex;
+    width: fit-content;
+}
+
+.contact .con img {
+    mix-blend-mode: color-dodge;
+    width: 400px;
+    height: 335px;
+    background-size: cover;
+}
+
+.contact .con .description p {
+    width: 500px;
+    font-size: 17px;
+}
+
+.contact .details {
+    display: flex;
+    justify-content: center;
+}
+
+.contact .details ul, .abt {
+    line-height: 2;
+    font-size: 17px;
+    margin-top: 0%;
+    margin-left: 0%;
+    list-style-type: none;
+}
+.contact .details ul a , .abt a{
+    text-decoration: none;
+    color: gray;
+    width: max-content;
+    transition: 0.2s;
+}
+.contact .details .abt a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact .details .abt a i{
+    margin-right: 5px;
+}
+.contact .details ul:not(:nth-of-type(1)) li::before {
+    /*not for contact */
+    content: "\2022";
+    color: gray;
+    width: 40px;
+}
+
+.contact .details ul:not(:nth-of-type(1)) li::before {
+    /*not for contact */
+    content: "\2022";
+    color: gray;
+    width: 40px;
+}
+
+.links ul a:hover, a:hover{
+    color: #ff3131;
+}
+
+.contact .details p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: large;
+    justify-content: center;
+}
+
+footer {
+    color: lightgray;
+}
+
+@media screen and (max-width:426px) {
+    body {
+        width: 100%;
+    }
+    .hb{
+        display: block;
+    }
+    .hb1{
+        display: block;
+
+      }
+      nav{
+        margin: 0%;
+        justify-content: center;
+    }
+    nav ul{
+        margin: 0%;
+        padding: 0%;
+    }
+    nav ul li{
+        margin-left: 20px;
+    }
+    nav ul a{
+        font-size: small;
+    }
+    nav button{
+        display: none;
+    }
+    .bg i {
+        margin-top: 10px;
+        display: block;
+    }
+
+    .contact_us{
+        padding:10px 10px;
+        margin: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:300px;
+        text-align: center;
+    }
+    .contact_us span{
+        font-size: 15px;
+    }
+    .contact_us .head{
+        font-size: 30px;
+    }
+    .contact_us p{
+    font-size: small;
+    }
+
+    .touch{
+        padding: 10px 10px;
+        margin: 0%;
+        display: flex;
+        flex-direction: column;
+    }
+    .touch .content{
+      text-align: center;
+    }
+    .touch h1{
+        font-size:large;
+    }
+    .touch p{
+        font-size: small;
+    }
+    .touch ul{
+        margin: 0%;
+        padding: 0%;
+    }
+    .map{
+        padding: 0%;
+        margin: 0%;
+        width: fit-content;
+    }
+    form{
+        margin:0px;
+        width: 390px;
+        text-align: center;
+    }
+    form input{
+        width: 250px;
+    }
+    .contact{
+        padding: 0%;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact .mail{
+        flex-direction: column;
+    }
+    .contact .mail input{
+        margin-left: 0%;
+        width: 300px;
+        height: 25px;
+    }
+    .contact .mail button{
+        width: 320px;
+        height: 40px;
+        margin-top: 10px;
+        margin-left: 0%;
+    }
+    .mail p{
+        font-size: 20px;
+    }
+    .contact .con{
+        flex-direction: column;
+    }
+    .contact .con img{
+        width: 400px;
+    }
+    .description{
+        margin-top: 10px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .contact .con .description p{
+        font-size: small;
+        width: 320px;
+    }
+    .contact .details{
+        width: 426px;
+        font-size: small;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    .contact .details .abt{
+        display:grid;
+        justify-content: center;
+        width: 300px;
+    }
+    .contact .details ul{
+        font-size: small;
+        width: fit-content;
+    }
+    .contact .details p{
+        font-size: 19px;
+        margin-left: 0%;
+    }
+    footer{
+        font-size: small;
+        width: 320px;
+    }
+}

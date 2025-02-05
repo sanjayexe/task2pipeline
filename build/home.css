@@ -1,0 +1,1015 @@
+body {
+  background-color: #252525;
+  /* bg color-#252525 btn color- #ff3131*/
+  padding: 0%;
+  margin: 0%;
+  font-family: sans-serif;
+  color: white;
+}
+.bg {
+  width: 100%;
+  height: 100%;
+}
+.bg::before {
+  content: "";
+  background: url("images/bg.jpg") center/cover no-repeat;
+  position: absolute;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@keyframes anim {
+  0% {
+    margin-top: 100%;
+    opacity: 0;
+    mix-blend-mode: lighten;
+    /* for removing bg  of logo */
+  }
+
+  50% {
+    opacity: 0.4;
+    mix-blend-mode: lighten;
+  }
+
+  75% {
+    opacity: 0.7;
+    mix-blend-mode: lighten;
+  }
+
+  100% {
+    mix-blend-mode: lighten;
+  }
+
+  /*   25%{
+        margin-bottom: 50%;
+        opacity: 0;
+        }
+    50%{
+        
+        } */
+}
+
+nav {
+  padding-top: 25px;
+  margin-right: 150px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-right: 40px;
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+
+nav ul a:hover {
+  color: #ff3131;
+  transition: 0.2s ease-in;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+}
+
+button {
+  background-color: #ff3131;
+  border-radius: 5px;
+  border-color: transparent;
+  border-style: solid;
+  width: max-content;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+  justify-content: center;
+  height: 46px;
+  font-size: 16px;
+}
+
+nav button,
+.btn button {
+  /* buttons intro div */
+  height: 46px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 16px;
+}
+
+nav button:hover,
+.btn button:hover {
+  background-color: red;
+}
+.main {
+  padding: 30px 150px 110px 150px;
+  animation: anim 1.5s;
+}
+
+.whole {
+  display: flex;
+}
+
+.intro {
+  padding-right: 8%;
+  padding-top: 4%;
+  width: 550px;
+}
+
+.intro span {
+  font-size: 19px;
+  font-weight: 600;
+  color: #ff3131;
+}
+
+.intro p {
+  font-size: 45px;
+  font-weight: bolder;
+  margin-top: 2%;
+}
+
+.intro .para {
+  font-size: medium;
+  font-weight: 100;
+  color: lightgray;
+  line-height: 1.5;
+}
+
+.btn {
+  margin-top: 55px;
+}
+
+.btn button:nth-of-type(2) {
+  /* spacing for 2nd btn */
+  margin-left: 40px;
+}
+
+.logo {
+  margin-top: 0%;
+  align-items: center;
+}
+
+.logo img {
+  width: 700px;
+  height: 510px;
+  mix-blend-mode: lighten;
+  animation-name: anim;
+  /* to remove bg color */
+}
+
+/* styling for about */
+.about {
+  display: flex;
+  flex-shrink: 1;
+  margin: -7% 150px 150px 150px;
+  justify-content: space-between;
+}
+
+.about .content {
+  display: block;
+  width: 300px;
+  height: 335px;
+  border-style: none;
+  background-color: #252525;
+  color: gray;
+  padding: 30px;
+  box-shadow: -1px 2px 19px -7px rgba(157, 147, 147, 0.49);
+  -webkit-box-shadow: -1px 2px 19px -7px rgba(157, 147, 147, 0.49);
+  -moz-box-shadow: -1px 2px 19px -7px rgba(157, 147, 147, 0.49);
+}
+
+.about .content .design {
+  margin-bottom: 5%;
+  border-style: none;
+  background-color: #ff3131;
+  width: 45px;
+  height: 8px;
+}
+
+.about .content span {
+  color: #ff3131;
+  font-size: 29px;
+  font-weight: bolder;
+}
+
+.about .content p {
+  line-height: 1.5;
+}
+
+.about .content ul {
+  list-style: none;
+  padding-left: 0%;
+}
+
+.about .content ul li {
+  line-height: 1.5;
+}
+
+.about .content ul li::before {
+  content: "🔻";
+}
+
+.choose {
+  margin: 150px 150px 150px 150px;
+  display: flex;
+}
+
+.choose .content {
+  width: 650px;
+}
+
+.choose .content span {
+  /* heading */
+  color: #ff3131;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.choose .content .design {
+  /* line after heading */
+  width: 80px;
+  height: 5px;
+  margin-top: 5%;
+  margin-bottom: 8%;
+  background-color: #ff3131;
+}
+
+.choose .content p,
+.help p {
+  color: lightgray;
+  line-height: 1.5;
+}
+
+.choose .list {
+  display: flex;
+}
+
+.choose ul {
+  margin-top: 60px;
+  list-style-type: none;
+  line-height: 2;
+  color: lightgrey;
+}
+
+.choose ul li::before {
+  content: "🔻";
+  width: 0;
+  height: 0;
+}
+
+.choose ul:nth-of-type(2) {
+  margin-left: 40px;
+}
+
+.choose ul li:hover {
+  color: white;
+}
+
+.choose img {
+  width: 550px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3%;
+  mix-blend-mode: lighten;
+}
+
+/* help div and happy div */
+
+.help,
+.happy {
+  margin: 150px 150px 50px 150px;
+}
+
+.help span,
+.happy span {
+  /*heading */
+  color: #ff3131;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.help .content1 .head .design,
+.happy .content1 .head .design {
+  /* line after heading */
+  width: 180px;
+  height: 5px;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  background-color: #ff3131;
+}
+
+.help p {
+  width: 75%;
+}
+
+.happy p {
+  color: lightgrey;
+}
+
+/* *******  */
+.ser {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.services {
+  padding: 0% 150px 50px 150px;
+  line-height: 1.5;
+  display: flex;
+  margin-top: 0%;
+}
+
+.services .type {
+  margin-left: 30px;
+  margin-bottom: 7px;
+  padding: 30px;
+  padding-bottom: 50px;
+  padding-top: 0px;
+  width: 270px;
+  height: 340px;
+  border-style: none;
+  background-color: #252525;
+  color: gray;
+  border-radius: 15px;
+  box-shadow: -1px 2px 19px -7px rgba(157, 147, 147, 0.49);
+  -webkit-box-shadow: -1px 2px 19px -7px rgba(157, 147, 147, 0.49);
+  -moz-box-shadow: -1px 2px 19px -7px rgba(157, 147, 147, 0.49);
+}
+
+.icon {
+  margin-top: -13%;
+}
+
+.icon :hover {
+  transform: scale(1.2);
+  color: white !important;
+  /* !important- to add more importance to a property/value than normal. */
+}
+
+.icon .fa-solid {
+  font-size: 70px;
+  /*size of icon */
+  transition: 0.3s;
+  padding: 0%;
+}
+
+.type .content span {
+  color: #ff3131;
+  font-size: 29px;
+  font-weight: bolder;
+}
+
+.services .type:nth-of-type(1) {
+  margin-left: 0%;
+}
+
+/*some number */
+.some_numbers {
+  margin: 50px 150px 15px 150px;
+  display: flex;
+  width: max-content;
+}
+
+.some_numbers span {
+  /*heading */
+  color: #ff3131;
+  font-size: 43px;
+  font-weight: 700;
+}
+
+.some_numbers .content span {
+  width: max-content;
+}
+
+.some_numbers p {
+  width: 100%;
+  color: lightgrey;
+  font-size: large;
+}
+
+.some_numbers .design {
+  width: 80px;
+  height: 5px;
+  margin-top: 5%;
+  margin-bottom: 8%;
+  background-color: #ff3131;
+}
+
+.some_numbers .details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.details .heading {
+  width: 300px;
+  margin-left: 5px;
+  display: flex;
+}
+
+.details p {
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.box {
+  padding: 0px 40px 40px 45px;
+  margin: 20px 150px 30px 300px;
+  width: 900px;
+  height: 170px;
+  border-style: none;
+  background-color: #252525;
+  border-radius: 5px;
+  color: gray;
+  box-shadow: -1px 2px 19px -7px rgba(157, 147, 147, 0.49);
+  -webkit-box-shadow: -1px 2px 19px -7px rgba(157, 147, 147, 0.49);
+  -moz-box-shadow: -1px 2px 19px -7px rgba(157, 147, 147, 0.49);
+  display: flex;
+}
+
+.box .content {
+  width: 600px;
+}
+
+.box .content span {
+  line-height: 1.5;
+}
+
+.box .heading {
+  color: #ff3131;
+  font-size: 29px;
+  font-weight: bolder;
+}
+
+.box button {
+  width: 150px;
+  height: 46px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 150px;
+  margin-top: 80px;
+}
+
+.box button:hover {
+  background-color: red;
+}
+
+.contact {
+  padding: 20px 150px 20px 150px;
+  justify-content: center;
+  line-height: 1.5;
+  color: grey;
+  font-size: 15px;
+  width: fit-content;
+}
+
+.contact .mail {
+  display: flex;
+  align-items: center;
+}
+
+.mail p {
+  color: #ff3131;
+  font-size: 33px;
+  font-weight: bold;
+}
+
+.contact .mail input {
+  width: 400px;
+  height: 30px;
+  border-style: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  margin-left: 200px;
+}
+
+.contact .mail button {
+  margin-left: 20px;
+  height: 50px;
+  width: 150px;
+}
+
+.contact .mail button:hover {
+  background-color: red;
+}
+
+.contact .con {
+  display: flex;
+  width: fit-content;
+}
+
+.contact .con img {
+  mix-blend-mode: color-dodge;
+  width: 400px;
+  height: 335px;
+  background-size: cover;
+}
+
+.contact .con .description p {
+  width: 500px;
+  font-size: 17px;
+}
+
+.contact .details {
+  display: flex;
+  justify-content: center;
+}
+
+.contact .details ul {
+  line-height: 2;
+  font-size: 17px;
+  margin-top: 0%;
+  list-style-type: none;
+}
+
+.contact .details ul a {
+  text-decoration: none;
+  color: gray;
+  width: max-content;
+  transition: 0.2s;
+}
+
+.contact .details ul:not(:nth-of-type(1)) li::before {
+  /*not for contact */
+  content: "\2022";
+  color: gray;
+  width: 40px;
+}
+
+.contact .details ul:not(:nth-of-type(1)) li::before {
+  /*not for contact */
+  content: "\2022";
+  color: gray;
+  width: 40px;
+}
+
+.contact .details a:hover {
+  color: #ff3131;
+}
+
+.contact .details p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: large;
+  justify-content: center;
+}
+
+footer {
+  color: lightgray;
+}
+
+@media screen and (max-width: 426px) {
+  body {
+    width: 100%;
+  }
+  nav {
+    margin: 0%;
+    justify-content: center;
+  }
+  nav ul {
+    margin: 0%;
+    padding: 0%;
+  }
+  nav ul li {
+    margin-left: 20px;
+  }
+  nav ul a {
+    font-size: small;
+  }
+  nav button {
+    display: none;
+  }
+  .bg i {
+    margin-top: 10px;
+    display: block;
+  }
+
+  .main {
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px 30px 0px;
+  }
+
+  .main p {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .main .logo {
+    display: none;
+  }
+
+  .main .btn {
+    padding: 0%;
+    margin-top: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main button {
+    font-size: small;
+    width: max-content;
+    height: 30px;
+    margin: 0%;
+    margin-bottom: 20px;
+  }
+
+  .main button:nth-of-type(2) {
+    margin: 0%;
+  }
+
+  .main span {
+    font-size: 14px;
+  }
+
+  .main .para {
+    font-size: small;
+  }
+  .main .whole {
+    width: 320px;
+    align-items: center;
+    text-align: center;
+  }
+  .intro {
+    padding: 0%;
+    width: fit-content;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    margin-top: 30px;
+    padding: 0%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about .content {
+    font-size: small;
+    margin-bottom: 3%;
+    height: fit-content;
+    width: 250px;
+  }
+
+  .about .content span {
+    font-size: 20px;
+  }
+
+  .choose {
+    margin: 0%;
+    align-items: center;
+    font-size: small;
+    text-align: center;
+    display: block;
+  }
+
+  .choose .content {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .choose .content span {
+    font-size: 20px;
+    align-items: center;
+    margin-left: 0%;
+  }
+
+  .choose p {
+    width: 300px;
+    align-items: center;
+  }
+
+  .choose .design {
+    margin-left: 140px;
+  }
+
+  .choose .list {
+    display: block;
+  }
+
+  .choose ul {
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .choose ul li {
+    text-align: start;
+  }
+
+  .choose ul:nth-of-type(2) {
+    margin-left: 0%;
+    margin-top: 0%;
+  }
+
+  .choose img {
+    margin-left: -5%;
+    width: 300px;
+    height: 300px;
+  }
+
+  .help,
+  .happy {
+    margin: 0%;
+  }
+
+  .help span,
+  .happy span {
+    font-size: 20px;
+  }
+
+  .help p {
+    font-size: small;
+  }
+  .ser {
+    align-items: center;
+  }
+  .services {
+    flex-direction: column;
+    padding: 0%;
+    margin: 0%;
+  }
+
+  .type .content span {
+    font-size: 20px;
+  }
+
+  .type .content p {
+    font-size: small;
+  }
+
+  .services .type {
+    height: 180px;
+    width: 210px;
+    margin-bottom: 20px;
+  }
+
+  .services .type:nth-of-type(1) {
+    margin-left: 30px;
+  }
+
+  .some_numbers {
+    margin-left: 80px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+  }
+  .some_numbers .details {
+    flex-direction: column;
+  }
+  .some_numbers .content {
+    text-align: center;
+  }
+
+  .some_numbers .design {
+    margin-left: 100px;
+  }
+
+  .some_numbers .content span {
+    font-size: 20px;
+  }
+
+  .some_numbers p {
+    flex-direction: column;
+  }
+
+  .some_numbers .details {
+    margin-left: 0%;
+  }
+  .some_numbers span {
+    font-size: 29px;
+  }
+
+  .some_numbers p {
+    font-size: small;
+  }
+
+  .box {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    padding: 20px 20px 20px 20px;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box .heading {
+    font-size: 16px;
+  }
+
+  .box .content {
+    width: fit-content;
+  }
+
+  .box .content span {
+    font-size: small;
+  }
+
+  .box button {
+    margin: 0%;
+    margin-top: 20px;
+    font-size: small;
+    width: max-content;
+    height: 40px;
+  }
+  .happy .content1 .head .design {
+    width: 100px;
+  }
+  .happy p {
+    font-size: small;
+    width: 300px;
+  }
+  .contact {
+    padding: 0%;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact .mail {
+    flex-direction: column;
+  }
+  .contact .mail input {
+    margin-left: 0%;
+    width: 300px;
+    height: 25px;
+  }
+  .contact .mail button {
+    width: 320px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 0%;
+  }
+  .mail p {
+    font-size: 20px;
+  }
+  .contact .con {
+    flex-direction: column;
+  }
+  .contact .con img {
+    width: 350px;
+  }
+  .description {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .contact .con .description p {
+    font-size: small;
+    width: 320px;
+  }
+  .contact .details {
+    width: 426px;
+    font-size: small;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  .contact .details .abt {
+    display: grid;
+    width: 300px;
+    justify-content: center;
+  }
+  .contact .details ul {
+    font-size: small;
+    width: fit-content;
+  }
+  .contact .details p {
+    font-size: 19px;
+    margin-left: 0%;
+  }
+  footer {
+    font-size: small;
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 319px) {
+  .box {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    padding: 15px 15px 15px 15px;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box .heading {
+    font-size: 16px;
+  }
+
+  .box .content {
+    width: fit-content;
+  }
+
+  .box .content span {
+    font-size: small;
+  }
+
+  .box button {
+    margin: 0%;
+    margin-top: 20px;
+    font-size: small;
+    width: max-content;
+    height: 40px;
+  }
+  .happy .content1 .head .design {
+    width: 100px;
+  }
+  .happy p {
+    font-size: small;
+    width: 300px;
+  }
+  .contact {
+    padding: 0%;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact .mail {
+    flex-direction: column;
+  }
+  .contact .mail input {
+    margin-left: 0%;
+    width: 300px;
+    height: 25px;
+  }
+  .contact .mail button {
+    width: 320px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 0%;
+  }
+  .mail p {
+    font-size: 20px;
+  }
+  .contact .con {
+    flex-direction: column;
+  }
+  .contact .con img {
+    width: 350px;
+  }
+  .description {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .contact .con .description p {
+    font-size: small;
+    width: 320px;
+  }
+  .contact .details {
+    width: 426px;
+    font-size: small;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  .contact .details .abt {
+    display: grid;
+    width: 300px;
+    justify-content: center;
+  }
+  .contact .details ul {
+    font-size: small;
+    width: fit-content;
+  }
+  .contact .details p {
+    font-size: 19px;
+    margin-left: 0%;
+  }
+  footer {
+    font-size: small;
+    width: 320px;
+  }
+}
